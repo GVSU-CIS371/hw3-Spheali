@@ -8,6 +8,7 @@
   import { useBeverageStore } from "../stores/beverageStore";
 
   const store = useBeverageStore();
+  store.init()
 </script>
 
 <style lang="scss" scoped>

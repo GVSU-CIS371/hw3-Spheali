@@ -29,6 +29,7 @@ import Cold from "./Cold.vue";
 import { useBeverageStore } from "../stores/beverageStore";
 
 const store = useBeverageStore();
+store.init()
 
 type Props = {
   isIced: boolean;

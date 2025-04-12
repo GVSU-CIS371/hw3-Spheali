@@ -6,6 +6,7 @@
   import { useBeverageStore } from "../stores/beverageStore";
 
   const store = useBeverageStore();
+  store.init()
 </script>
 
 <style scoped>

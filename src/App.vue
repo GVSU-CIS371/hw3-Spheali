@@ -94,8 +94,12 @@
 <script setup lang="ts">
 import Beverage from "./components/Beverage.vue";
 import { useBeverageStore } from "./stores/beverageStore";
+import { onMounted } from "vue";
 
 const bevStore = useBeverageStore();
+onMounted(async () => {
+  bevStore.init()
+})
 </script>
 
 <style lang="scss">
